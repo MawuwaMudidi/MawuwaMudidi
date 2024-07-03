@@ -1,0 +1,21 @@
+package overit.technical.test;
+
+public class DoubleIntArray {
+    public static void main(String[] args) {
+        // define an example array
+        int[] originalArray = {1, 2, 3, 4, 5};
+        // call double array values
+        doubleArray(originalArray);
+        printArray(originalArray);
+    }
+    public static void doubleArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] *= 2;
+        }
+    }
+    public static void printArray(int[] array){
+            for (int i = 0; i < array.length; i++) {
+                System.out.print("the double array is " + array[i] + " ");
+            }
+        }
+    }
